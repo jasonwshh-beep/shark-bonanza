@@ -1,0 +1,14 @@
+{
+  "name": "shark-bonanza-slot",
+  "version": "1.0.0",
+  "description": "Original play-money shark themed slot prototype for Railway testing.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}

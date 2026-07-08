@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shark Bonanza — Play Money Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero-card">
+      <div class="only-pill">Only on • Prototype</div>
+      <div class="game-header">
+        <div class="mascot" aria-hidden="true">🦈</div>
+        <div>
+          <h1>Shark Bonanza</h1>
+          <p>Friendly reef slot • play-money test build</p>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div><span>Balance</span><strong id="balance">$1,000.00</strong></div>
+        <div><span>Bet</span><strong id="betLabel">$1.00</strong></div>
+        <div><span>Win</span><strong id="winLabel">$0.00</strong></div>
+        <div><span>Mode</span><strong id="modeLabel">Base</strong></div>
+      </div>
+
+      <div id="reels" class="reels" aria-live="polite"></div>
+
+      <div class="message" id="message">Pick a bet and spin. 3+ matching symbols left-to-right pay. 3+ treasure scatters trigger free spins.</div>
+
+      <div id="bonusPanel" class="bonus-panel hidden">
+        <div><strong id="freeSpinsCount">0</strong><span> free spins left</span></div>
+        <div><span>Total bonus win </span><strong id="bonusWinLabel">$0.00</strong></div>
+      </div>
+
+      <div class="controls">
+        <label class="control">
+          Bet
+          <select id="betSelect">
+            <option value="0.20">$0.20</option>
+            <option value="0.40">$0.40</option>
+            <option value="1" selected>$1.00</option>
+            <option value="2">$2.00</option>
+            <option value="5">$5.00</option>
+            <option value="10">$10.00</option>
+          </select>
+        </label>
+        <button id="spinBtn" class="primary">Spin</button>
+        <button id="extraBtn">Extra Chance 3x</button>
+        <button id="buyBtn">Buy Bonus 100x</button>
+        <button id="resetBtn" class="ghost">Reset</button>
+      </div>
+    </section>
+
+    <aside class="info-card">
+      <h2>Paytable</h2>
+      <div id="paytable" class="paytable"></div>
+      <p class="fineprint">For testing only. No real money, no gambling integration, no Stake branding or assets included.</p>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
