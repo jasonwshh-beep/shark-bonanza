@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shark Bonanza — 97.5% RTP Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ocean-bg"><div class="sun"></div><div class="cloud c1"></div><div class="cloud c2"></div><div class="island"></div></div>
+  <main class="game">
+    <header class="topbar">
+      <div class="brand"><span class="logo">🦈</span><div><h1>Shark Bonanza</h1><p>Friendly reef slot • target RTP 97.5%</p></div></div>
+      <button id="infoBtn" class="iconbtn">ⓘ</button>
+    </header>
+
+    <section class="stage">
+      <aside class="surf-sign"><div class="only">ONLY ON</div><div class="title">SHARK<br>BONANZA</div><div class="splash">EXCLUSIVE TEST</div></aside>
+      <div class="reel-house">
+        <div class="roof"><span>🌺</span><span>🌴</span><span>🌸</span></div>
+        <div id="reels" class="reels"></div>
+        <div class="base-trim"></div>
+      </div>
+      <aside class="mascot-card"><div class="floatie">🦈</div><div class="mascot-text">Sunny says<br><b>spin smooth!</b></div></aside>
+    </section>
+
+    <div class="win-banner" id="winBanner">GOOD LUCK!</div>
+
+    <footer class="hud">
+      <button id="menuBtn" class="hudbtn">☰</button>
+      <div class="stat"><small>BALANCE</small><b id="balance">$1,000.00</b></div>
+      <div class="stat"><small>BET</small><select id="betSelect"><option value="0.20">$0.20</option><option value="0.40">$0.40</option><option value="1" selected>$1.00</option><option value="2">$2.00</option><option value="5">$5.00</option><option value="10">$10.00</option></select></div>
+      <div class="stat"><small>WIN</small><b id="winLabel">$0.00</b></div>
+      <button id="extraBtn" class="feature">EXTRA<br><b>3x</b></button>
+      <button id="spinBtn" class="spin">↻</button>
+      <button id="buyBtn" class="feature buy">BONUS<br><b>100x</b></button>
+      <button id="resetBtn" class="hudbtn">⟲</button>
+    </footer>
+
+    <div id="bonusPanel" class="bonus hidden"><b id="freeSpinsCount">0</b> FREE SPINS LEFT • BONUS WIN <b id="bonusWinLabel">$0.00</b></div>
+  </main>
+
+  <dialog id="payDialog"><h2>Paytable / Test Math</h2><div id="paytable"></div><p>This is a play-money prototype. Target RTP is set to 97.5% by the payout distribution in <code>script.js</code>. Real-money launch requires certified math/RNG review.</p><button id="closePay">Close</button></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
